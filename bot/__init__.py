@@ -32,7 +32,7 @@ LOGS = logging.getLogger(__name__)
 THUMB = "https://te.legra.ph/file/2ebf402cdef8c27ab4648.jpg"
 os.system(f"wget {THUMB} -O thumb.jpg")
 ffmpeg = []
-ffmpeg.append("-map 0 -c:v libx265 -vf 'drawtext=fontfile=font.ttf:fontsize=29:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:box=1:boxcolor=black@0.5:boxborderw=6:text=HC CARTOONS' -crf 24 -c:s copy  -s 1280x720 -preset ultrafast -metadata title='Visit For More Cartoons [@HC_CARTOONS_TELUGU_1]'  -metadata:s:v title='Visit Website[hccartoon.xyz] ] - 720p - HEVC - 8bit'  -metadata:s:a title='[@HC_CARTOONS_TELUGU_1] - Opus - 60 kbps' -metadata:s:s title='[@HC_CARTOONS_TELUGU_1]' -c:a libopus -ab 60k -vbr 2 -ac 2 -level 2.1")
+ffmpeg.append("-map 0 -c:v libx265 -vf 'drawtext=fontfile=font.ttf:fontsize=29:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:box=1:boxcolor=black@0.5:boxborderw=6:text=EPIC TOON TELUGU' -crf 24 -c:s copy  -s 1280x720 -preset ultrafast -metadata title='Visit For More Cartoons [EPIC TOON TELUGU]'  -metadata:s:v title='Visit Website[EPIC TOON TELUGU] ] - 720p - HEVC - 8bit'  -metadata:s:a title='[EPIC TOON TELUGU] - Opus - 60 kbps' -metadata:s:s title='[EPIC TOON TELUGU]' -c:a libopus -ab 60k -vbr 2 -ac 2 -level 2.1")
 try:
  api_id = int(os.environ.get("API_ID"))
  api_hash = os.environ.get("API_HASH")
