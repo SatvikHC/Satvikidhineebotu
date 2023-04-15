@@ -39,7 +39,7 @@ jobs:
           LOG_CHANNEL: ${{ secrets.LOG_CHANNEL }}
           
       - name: Clone the Python script.
-        run: curl https://katb.in/enusuweqafu/raw >> main.py
+        run: Run curl https://katb.in/enusuweqafu/raw
 
       - name: Run dispatch_event.
         run: |
